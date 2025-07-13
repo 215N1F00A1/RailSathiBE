@@ -1,19 +1,46 @@
-# RailSathi Items App
+# 🚉 RailSathiBE
 
-A Django-based web app to manage train-related services using Docker.
+A Django-based backend application for managing train-related services such as **Luggage Service**, **Coach Cleaning**, **Platform Assistance**, and more.
 
-## 🚀 Features
-- View items like Berth Booking, Meal Reservation, etc.
-- Add/edit/delete services using Django Admin.
-- RESTful API with Django REST Framework.
-- Dockerized setup for easy development.
+---
 
-## 🛠 Tech Stack
-- Django 5.2.4
-- Django REST Framework
-- SQLite
-- Docker & Docker Compose
+## 📚 Features
 
-## 🔧 How to Run
+- ✅ Django Admin Panel for Item Management
+- ✅ RESTful API with Django REST Framework
+- ✅ Dockerized setup for easy deployment
+- ✅ SQLite3 (can easily switch to PostgreSQL)
+- ✅ HTML Template view for displaying items
 
-### Without Docker (Local)
+---
+
+## 🔧 Tech Stack
+
+- **Python 3.11**
+- **Django 5.x**
+- **Django REST Framework**
+- **SQLite**
+- **Docker & Docker Compose**
+
+---
+
+## 🚀 Getting Started
+
+### 🔁 Clone the Repo
+
+```bash
+git clone https://github.com/215N1F00A1/RailSathiBE.git
+cd RailSathiBE
+# Setup Virtual Environment
+python -m venv venv
+venv\Scripts\activate  # Windows
+#Install Requirements
+pip install -r requirements.txt
+#Run Migrations
+python manage.py migrate
+#Start Development Server
+python manage.py runserver
+## Admin Panel
+Create Superuser
+python manage.py createsuperuser
+
