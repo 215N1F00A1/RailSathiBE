@@ -43,4 +43,16 @@ python manage.py runserver
 ## Admin Panel
 Create Superuser
 python manage.py createsuperuser
+#Django App Output Links (Localhost)
+🔹 Home Page (HTML Template View):
+Displays the list of items from the database.
+👉 http://127.0.0.1:8000/
+
+🔹 Admin Panel (Django Admin):
+Requires superuser login to add/update/delete items.
+👉 http://127.0.0.1:8000/admin/
+
+🔹 Items API Endpoint (DRF):
+Returns JSON for all items (you can test GET, POST, etc.).
+👉 http://127.0.0.1:8000/items/
 
