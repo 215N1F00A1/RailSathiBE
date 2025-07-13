@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RailSathi</title>
+</head>
+<body>
+  <h1>Welcome to RailSathi Items App!</h1>
+  <ul>
+    {% for item in items %}
+      <li>{{ item.name }}</li>
+    {% empty %}
+      <li>No items found.</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
